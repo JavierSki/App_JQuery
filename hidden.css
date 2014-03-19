@@ -1,0 +1,46 @@
+.container .item #h-pup{
+	background: #fff;
+	border-color: 1px solid #ccc;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+	position: relative;
+	animation: h_ani .2s;
+	-webkit-animation: h_ani .2s;
+}
+.container .item #h-pup:target{
+	transform: translateX(-9999px);
+	z-index: 1;
+}
+
+.container #h-pup .pup-l{
+	display: none;
+	position: absolute;
+	visibility: hidden;
+}
+.container #h-pup .h-img{
+	display: none;
+	border-radius: 0;
+}
+.container #h-pup .h-div{
+	border-right: 1px solid #ccc;
+	display: none;
+	float: right;
+	max-height: 20%;
+}
+.container #h-pup .pup-r{
+	display: none;
+	position: absolute;
+	visibility: hidden;
+}
+.container #h-pup .pup-r .h-ped{
+	background-color: #ccc;
+	opacity: 0.5;
+	text-align: center;
+	text-decoration: underline;
+}
+.container #h-pup .pup-r .h-cost{
+	display: inline-block;
+	font-size: 0.5em;
+}
+
+
+

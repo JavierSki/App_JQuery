@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		<title>Asaderos</title>
+		<meta name="description" content="Blueprint: Slide and Push Menus" />
+		<meta name="keywords" content="sliding menu, pushing menu, navigation, responsive, menu, css, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="hidden.css">
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Aplication</h3>
+			<a href="asaderos.html"><img src="images/Asadero.jpg" /> Asaderos</a>
+			<a href="droguerias.html"><img src="images/Drogueria.jpg" /> Droguerias</a>
+			<a href="ferreterias.html"><img src="images/Ferreteria.jpg" /> Ferreterias</a>
+			<a href="heladerias.html"><img src="images/Heladeria.jpg" /> Heladerias</a>
+			<a href="comidasrap.html"><img src="images/Comidas.jpg" />Comidas Rapidas</a>
+			<a href="restaurantes.html"><img src="images/Restaurant.jpg" /> Restaurante</a>
+			
+		</nav>
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+
+			  
+		</nav>
+		<div id="header">	
+			<h1 id="titulo_header">Domicilios</h1>	
+			<div class="main">
+				<section>
+					<section class="buttonset">
+						<a href="#" id="showLeftPush"></a>
+						<a href="#" id="showRightPush"></a>
+					</section>
+				</section>
+			</div>		
+		</div>
+		<div class="container">
+			  <article class="item">
+					<figure class="imagen_item">
+						<img src="images/Asadero.jpg"/>
+					</figure>
+					<h2 class="titulo_item">
+						<a href="#">Una mirada a Leap motion: El control Minority Report</a>
+					</h2>
+					<p class="autor_item">
+						Por <a href="#">Javier Martinez</a>
+					</p>
+					<p class="datos_item">
+						<a class=" tag_item" href="#">categoria</a>
+						<span class="fecha_item">Hace <strong>5</strong> min</span>
+						<a class="comentarios_item" href="#">455</a>
+						<a class="guardar_item" href="#"></a>
+					</p>
+					<p class="votacion">
+						<a class="up" href="#"></a>
+						3141
+						<a class="down" href="#"></a>
+					</p>
+				</article>
+				<article class="item">
+					<figure class="imagen_item">
+						<img src="images/Asadero.jpg"/>
+					</figure>
+					<h2 class="titulo_item">
+						<a href="#">Una mirada a Leap motion: El control Minority Report</a>
+					</h2>
+					<p class="autor_item">
+						Por <a href="#">Javier Martinez</a>
+					</p>
+					<p class="datos_item">
+						<a class=" tag_item" href="#">categoria</a>
+						<span class="fecha_item">Hace <strong>5</strong> min</span>
+						<a class="comentarios_item" href="#">455</a>
+						<a class="guardar_item" href="#"></a>
+					</p>
+					<p class="votacion">
+						<a class="up" href="#"></a>
+						3141
+						<a class="down" href="#"></a>
+					</p>
+				</article>
+				<article class="item">
+					<figure class="imagen_item">
+						<img src="images/Asadero.jpg"/>
+					</figure>
+					<h2 class="titulo_item">
+						<a href="#">Una mirada a Leap motion: El control Minority Report</a>
+					</h2>
+					<p class="autor_item">
+						Por <a href="#">Javier Martinez</a>
+					</p>
+					<p class="datos_item">
+						<a class=" tag_item" href="#">categoria</a>
+						<span class="fecha_item">Hace <strong>5</strong> min</span>
+						<a class="comentarios_item" href="#">455</a>
+						<a class="guardar_item" href="#"></a>
+					</p>
+					<p class="votacion">
+						<a class="up" href="#"></a>
+						3141
+						<a class="down" href="#"></a>
+					</p>
+				</article>
+				<article class="item">
+					<figure class="imagen_item">
+						<img src="images/Asadero.jpg"/>
+					</figure>
+					<h2 class="titulo_item">
+						<a href="#">Una mirada a Leap motion: El control Minority Report</a>
+					</h2>
+					<p class="autor_item">
+						Por <a href="#">Javier Martinez</a>
+					</p>
+					<p class="datos_item">
+						<a class=" tag_item" href="#">categoria</a>
+						<span class="fecha_item">Hace <strong>5</strong> min</span>
+						<a class="comentarios_item" href="#">455</a>
+						<a class="guardar_item" href="#"></a>
+					</p>
+					<p class="votacion">
+						<a class="up" href="#"></a>
+						3141
+						<a class="down" href="#"></a>
+					</p>
+				</article>	
+		</div>
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+				menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+				
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				
+				body = document.body;
+
+			
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+
+			function disableOther( button ) {
+				
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				
+			}
+		</script>
+		
+	</body>
+</html>

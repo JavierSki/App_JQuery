@@ -1,0 +1,344 @@
+/* General styles for all menus */
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-i6vjia');
+	src:url('fonts/icomoon.eot?#iefix-i6vjia') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-i6vjia') format('woff'),
+		url('fonts/icomoon.ttf?-i6vjia') format('truetype'),
+		url('fonts/icomoon.svg?-i6vjia#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	background-color: #e9eaed;
+}
+a, a:link, a:active, a:visited, a:hover
+{
+	color: #333;
+	text-decoration: underline;
+}
+.cbp-spmenu {
+	background: #47a3da;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #0d77b6;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.cbp-spmenu a:hover {
+	background: #258ecd;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+/*Articulos*/
+.container{
+	margin: 2em;
+	max-height: 100%;
+}
+.container p{
+	margin: 50px;
+}
+.container .item{
+	background: white;
+	border: 1px solid #d0d1d5;
+	border-bottom: 3px #22BCE0 solid;
+	border-radius: 2px;
+	box-shadow: 2px 2px 3px #ccc;
+	margin-bottom: 3em;
+	min-height: 128px;
+	position: relative;
+}
+.container .item p{
+	color: #7A7A7A;
+	font-size: 0.9em;
+}
+.container .item .datos_item{
+	text-align: right;
+}
+.container .item .datos_item .comentarios_item{
+	background: #878787;
+	border-radius: 4px;
+	color: white;
+	margin: 0 0 0 2em;
+	padding: 4px;
+	position: relative;
+	text-decoration: none;
+}
+.container .item .datos_item .comentarios_item:after{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #878787;
+	content: "";
+	left: 10px;
+	position: absolute;
+	top: 100%;
+}
+.container .item .datos_item .guardar_item{
+	margin: 0 1em;
+	text-decoration: none;
+}
+.container .item .datos_item .guardar_item:after{
+	color: #FD5;
+	content: "\e603";
+	font-family: "icomoon";
+}
+.container .item .datos_item .tag_item{
+	background: #22BCE0;
+	border-radius: 0.5em;
+	color: white;
+	float: left;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+.container .item .imagen_item{
+	float: left;
+	margin: 1.2em 0 0 0;
+	padding: 0.5em;
+	position: relative;
+}
+.container .item .imagen_item img{
+	width: 76px;
+	border-radius: 40px;
+}
+.container .item .titulo_item{
+	font-size: 1em;
+	font-style: italic;
+	padding: 0.5em 0.5em 0;
+}
+.container .item .titulo_item a{
+	color: #444;
+	text-decoration: none;
+}
+.container .item .votacion{
+	background: white;
+	border: 1px solid #d0d1d5;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 3px 0 0 0;
+	padding: 0.5em 0;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 96px;
+}
+.container .item .votacion a{
+	text-decoration: none;
+}
+.container .item .votacion .up:after,
+.container .item .votacion .down:after{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+.container .item .votacion .down:after{
+	color: red;
+	content: "\e604";
+	
+}
+.container .item .votacion .up:after{
+	color: green;
+	content: "\e605";
+}
+
+/* Header*/
+	
+#header {
+
+	background: #22BCE0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 50px;
+
+}
+
+
+#header h1 {
+
+	display: inline-block;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+	vertical-align: top;
+	width: 100%;
+}
+
+#header a, #header #showLeftPush {
+color: white;
+text-decoration: none;
+display: inline-block;
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+left: 10px;
+}
+
+#header a, #header #showLeftPush:after{
+	content: "\e600";
+	font-family: "icomoon";
+	font-size: 1em;
+	opacity: 1;
+}
+
+#header a, #header #showRightPush {
+	
+	left: auto;
+	right: 10px;
+
+}
+
+#header a, #header #showRightPush:after{
+
+	content: "\e601";
+	font-family: "icomoon";
+	font-size: 1.3em;
+	opacity: 1;
+}
+
+
+/* ----------- fin Header-------------*/
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1;
+}
+
+
+/* Imagen menus */
+
+.cbp-spmenu-vertical a img{
+
+	border-radius: 50%;
+	/*max-width: 30%;*/
+	height: 60px;
+	vertical-align: middle;
+	width: 60px;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #258ecd;
+	padding: 1em;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+/*@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}*/
